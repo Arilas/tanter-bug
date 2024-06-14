@@ -23,13 +23,13 @@ declare module "@tanstack/react-router" {
 }
 async function boot() {
   const auth = await context.getInstance(AuthService);
-  await router.invalidate();
-  // auth.getEventEmitter().on("auth", () => {
+  // await router.invalidate();
+  // auth.getEventEmitter().on("auth", () =>
   //   router.invalidate();
-  // });
-  // auth.getEventEmitter().on("logout", () => {
+  // );
+  // auth.getEventEmitter().on("logout", () =>
   //   router.invalidate();
-  // });
+  // );
   // Render the app
   const rootElement = document.getElementById("root")!;
   if (!rootElement.innerHTML) {
